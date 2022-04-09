@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');     
+header{
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Montserrat', sans-serif;
+	background: #607DF7;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.logo__container{
+	display: flex;
+	align-items: center;
+	font-size: 30px;
+	font-weight: 800;
+}
+.logo__img
+{
+	height: 100px;
+	border-radius: 30%;
+	padding: 0;
+	margin: 0;
+}
+.navegador{
+	display: flex;
+}
+.navegador ul{
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}.navegador ul a{
+	display: flex;
+	text-decoration: none;
+	padding: 15px;
+	align-items: center;
+	color: ghostwhite;
+	transition: background .3s;
+}
+.navegador ul a:hover{
+	background: #685CED;
+}
+.segmento__grid{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 400px;
+	grid-auto-rows: 400px;
+	margin: 10px;
+}
+.segmento{
+	display: flex;
+	border: solid 2px ghostwhite;
+	padding: 5px;
+}
+.segmento__cuerpo{
+	flex-grow: 1;
+	font-family: 'Rubik', sans-serif;
+	padding: 0 50px;
+}
+.titulo{
+	text-align: center;
+	margin-top: 40px;
+	font-size: 30px;
+	font-weight: 700;
+	border-bottom: solid 1px ghostwhite;
+}
+.sub{
+	text-align: center;
+	border-bottom: solid 1px ghostwhite;
+}
+.segmento img{
+	height: 300px;
+	align-self: center;
+	border: solid 4px ghostwhite;
+	margin: 0 20px;
+}
+.main{
+	display: flex;
+}
+aside{
+	flex-basis: 200px;
+	flex-shrink: 0;
+	order: 1;
+}
+.aside__grid{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(4, 250px);
+	grid-auto-rows: 250px;
+}
+.aside__grid img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.segmento__container{
+	flex-grow: 4;
+	background: #60CCF7;
+	order: 2;
+}
+@media(max-width: 426px){
+	header{
+		flex-direction: column;
+	}
+	.navegador ul{
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	aside{
+		flex-basis: 200px;
+		flex-shrink: 0;
+		order: 3;
+	}
+	.main{
+		flex-direction: column;
+	}
+	.segmento img{
+	height: 30vh;
+	align-self: center;
+	border: solid 4px ghostwhite;
+	margin: 0;
+}
+.segmento__cuerpo{
+	flex-grow: 1;
+	font-family: 'Rubik', sans-serif;
+	padding: 0 10px;
+}
+header{
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.navegador{
+	align-self: stretch;;
+}
+.navegador ul{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+}
+.navegador ul a{
+	justify-content: center;
+}
+
+}
