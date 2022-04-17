@@ -85,6 +85,7 @@ main h2{
 	animation-name: patata;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
+	z-index: 2;
 }
 @keyframes patata{
 	0%{
