@@ -22,6 +22,7 @@ header{
 	top: 0px;
 	width: 100%;
 	align-items: center;
+	z-index: 1;
 }
 header div{
 	display: flex;
@@ -102,8 +103,12 @@ main h2{
 	align-items: center;
 	background: linear-gradient(0deg,#FFD5BD,#FFEEE3);
 }
+#b{
+	height: 400px;
+	width: 600px;
+}
 h2{
-	margin-top: 10vh;
+	margin-top: 12vh;
 	font-size: 3em;
 	color: #401801;
 	text-align: center;
@@ -163,6 +168,7 @@ footer{
 }
 .red-social{
 	height: 50px;
+	transition: .2s;
 }
 #contacto div h3{
 	color: white;
@@ -176,7 +182,7 @@ footer{
 }
 #nosotros{
 	display: flex;
-	height:auto;
+	height: 100vh;
 	background: linear-gradient(0,rgba(217, 181, 150, 1.0),#fbdec3) ;
 	justify-content: space-around;
 	align-items: center;
@@ -186,8 +192,6 @@ footer{
 }
 #nosotros h2{
 	margin-bottom: 0;
-	margin-top: 100px;
-	text-align: center;
 }
 #nosotros p{
 	margin: 0;
@@ -206,11 +210,6 @@ footer{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	flex-grow: 1;
-}
-#iframe{
-	flex-grow: 1;
-	height: 100%;
 }
 #sub2{
 	display: flex;
@@ -218,6 +217,15 @@ footer{
 	align-items: center;
 }
 @media(max-width: 787px){
+	#b{
+		width: 80%;
+		height: 160px;
+		margin-bottom: 60px;
+	}
+	.grid-item p{
+		margin: 0;
+		height: 40px;
+	}
 	header{
 		flex-direction: column;
 		align-items: center;
@@ -268,14 +276,17 @@ footer{
 	#contacto-div{
 		margin-top: 80px;
 	}
+	main{
+		background-position: center;
+	}
 	#gato{
-	height: 40vh;
-	width: 70vw;   
-	 }
-	 main{
-	 	background-position: center;
-	
-     }
+		height: 50vh;
+		width: 80vw;
+	}
+	#c{
+		width: 100%;
+		margin-bottom: 60px;
+	}
 }
 @media(max-width: 1026px) and (min-width: 787px){
 	#productos-grid{

@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/estilo.css">
 	<title>Cats Store</title>
 	<link rel="icon" type="image/ico" href="img/gato.ico">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<a href="https://wa.me/+56973789156/?text=Hola,%20quiero%20hacer%20una%20consulta%20sobre%20las%20paginas%20web." target="_blank"><img src="img/whatsapp.png" alt="whatsapp logo" id="w-button"></a>
@@ -32,34 +33,34 @@
 		</div>
 	</main>
 	<div id="productos">
-		<h2>Nuestros productos</h2>
+		<h2 data-aos="fade-down">Nuestros productos</h2>
 		<div id="productos-grid">
-			<div class="grid-item">
+			<div class="grid-item" data-aos="fade-right">
 				<h3>Rascadores</h3>
 				<p>los mejores rascadores de todos</p>
 				<img src="img/rascador.jpg" alt="rascador">
 			</div>
-			<div class="grid-item">
+			<div class="grid-item" data-aos="fade-down">
 				<h3>Alimento</h3>
 				<p>variedades de alimentos</p>
 				<img src="img/comida.jpg" alt="alimento de gato">
 			</div>
-			<div class="grid-item">
+			<div class="grid-item" data-aos="fade-left">
 				<h3>Camas</h3>
 				<p>camas hechas a mano</p>
 				<img src="img/cama.jpg" alt="cama de gato esferica">
 			</div>
-			<div class="grid-item">
+			<div class="grid-item" data-aos="fade-right">
 				<h3>Cepillos</h3>
 				<p>todo tipo de cepillos</p>
 				<img src="img/cepillo.jpg" alt="cepillo de gato">
 			</div>
-			<div class="grid-item">
+			<div class="grid-item" data-aos="fade-up">
 				<h3>Ropa</h3>
 				<p>variedad de prendas para tu gato</p>
 				<img src="img/ropa.jpg" alt="ropa de gatos">
 			</div>
-			<div class="grid-item">
+			<div class="grid-item" data-aos="fade-left">
 				<h3>Areneros</h3>
 				<p>areneros de distintos tamaños</p>
 				<img src="img/arenero.jpg" alt="rascador">
@@ -69,5 +70,9 @@
 	<footer>
 		&copy; ERICK MARTÍNEZ | ESTUDIANTE
 	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+     AOS.init();
+    </script>
 </body>
 </html>
