@@ -1,88 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pagina de prueba</title>
 	<link rel="stylesheet" href="css/estilo.css">
+	<title>Cats Store</title>
+	<link rel="icon" type="image/ico" href="img/gato.ico">
 </head>
 <body>
+	<a href="https://wa.me/+56973789156/?text=Hola,%20quiero%20hacer%20una%20consulta%20sobre%20las%20paginas%20web." target="_blank"><img src="img/whatsapp.png" alt="whatsapp logo" id="w-button"></a>
 	<header>
-		<div class="logo__container">
-			<img src="img/logo.png" alt="logo" class="logo__img">
-			<div>Pagina</div>
-		</div>
-		<nav class="navegador">
+		<div id="logo-div">
+	    <img src="img/gato.png" alt="logo" id="logo-img">
+		<a href="https://www.flaticon.es/iconos-gratis/gato" title="gato iconos" target="_blank" id="logo-link">Gato iconos creados por Freepik - Flaticon</a>
+	    </div>
+		<nav>
 			<ul>
-				<a href="#"><li>Home</li></a>
-				<a href="#"><li>Nuestros productos</li></a>
-				<a href="#"><li>Sobre nosotros</li></a>
-				<a href="#"><li>Contacto</li></a>
+				<a href="#main"><li>Inicio</li></a>
+				<a href="#productos"><li>Productos</li></a>
+				<a href="nosotros.html"><li>Sobre nosotros</li></a>
+				<a href="contacto.html"><li>Contacto</li></a>
 			</ul>
 		</nav>
 	</header>
-	<div class="main">
-		<aside>
-			<div class="aside__grid">
-				<img src="img/ditsi1.jpg" alt="">
-				<img src="img/cejona.jpg" alt="">
-				<img src="img/pequeños.jpg" alt="">
-				<img src="img/hermanos.jpg" alt="">
-				<img src="img/quiya.jpg" alt="">
-				<img src="img/quiya1.jpg" alt="">
-				<img src="img/ditsi2.jpg" alt="">
+	<main id="main">
+		<div class="opacity">
+			<div>
+				<h1>Cat Store</h1>
+				<h2>pagina de ejemplo</h2>
 			</div>
-		</aside>
-		<div class="segmento__container">
-			<div class="segmento__grid">
-			<div class="segmento">
-				<img src="img/ditsi.jpg" alt="">
-				<div class="segmento__cuerpo">
-					<div class="titulo">
-						Ditsi
-					</div>
-					<div class="sub">
-						menor
-					</div>
-					<div class="contenido">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione, provident doloribus minima dolores quidem, nesciunt dolore. Eos ratione ea culpa minus, rem. Doloribus, eos. Eveniet labore at veritatis aut!
-					</div>
-				</div>
-			</div>
-			<div class="segmento">
-				<img src="img/ditsi.jpg" alt="">
-				<div class="segmento__cuerpo">
-					<div class="titulo">
-						negito
-					</div>
-					<div class="sub">
-						menor
-					</div>
-					<div class="contenido">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione, provident doloribus minima dolores quidem, nesciunt dolore. Eos ratione ea culpa minus, rem. Doloribus, eos. Eveniet labore at veritatis aut!
-					</div>
-				</div>
-			</div>
-			<div class="segmento">
-				<img src="img/ditsi.jpg" alt="">
-				<div class="segmento__cuerpo">
-					<div class="titulo">
-						quiya
-					</div>
-					<div class="sub">
-						menor
-					</div>
-					<div class="contenido">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione, provident doloribus minima dolores quidem, nesciunt dolore. Eos ratione ea culpa minus, rem. Doloribus, eos. Eveniet labore at veritatis aut!
-					</div>
-				</div>
-			</div>
-
 		</div>
+	</main>
+	<div id="productos">
+		<h2>Nuestros productos</h2>
+		<div id="productos-grid">
+			<div class="grid-item">
+				<h3>Rascadores</h3>
+				<p>los mejores rascadores de todos</p>
+				<img src="img/rascador.jpg" alt="rascador">
+			</div>
+			<div class="grid-item">
+				<h3>Alimento</h3>
+				<p>variedades de alimentos</p>
+				<img src="img/comida.jpg" alt="alimento de gato">
+			</div>
+			<div class="grid-item">
+				<h3>Camas</h3>
+				<p>camas hechas a mano</p>
+				<img src="img/cama.jpg" alt="cama de gato esferica">
+			</div>
+			<div class="grid-item">
+				<h3>Cepillos</h3>
+				<p>todo tipo de cepillos</p>
+				<img src="img/cepillo.jpg" alt="cepillo de gato">
+			</div>
+			<div class="grid-item">
+				<h3>Ropa</h3>
+				<p>variedad de prendas para tu gato</p>
+				<img src="img/ropa.jpg" alt="ropa de gatos">
+			</div>
+			<div class="grid-item">
+				<h3>Areneros</h3>
+				<p>areneros de distintos tamaños</p>
+				<img src="img/arenero.jpg" alt="rascador">
+			</div>
 		</div>
 	</div>
-	<footer class="pie">
-		
+	<footer>
+		&copy; ERICK MARTÍNEZ | ESTUDIANTE
 	</footer>
 </body>
 </html>
