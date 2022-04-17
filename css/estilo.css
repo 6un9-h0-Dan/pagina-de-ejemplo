@@ -12,6 +12,7 @@ main{
 	background-image: url(../img/fondo.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 }
 header{
 	display: flex;
@@ -105,6 +106,7 @@ h2{
 	margin-top: 10vh;
 	font-size: 3em;
 	color: #401801;
+	text-align: center;
 }
 #productos-grid{
 	display: grid;
@@ -174,7 +176,7 @@ footer{
 }
 #nosotros{
 	display: flex;
-	height: 100vh;
+	height:auto;
 	background: linear-gradient(0,rgba(217, 181, 150, 1.0),#fbdec3) ;
 	justify-content: space-around;
 	align-items: center;
@@ -184,6 +186,8 @@ footer{
 }
 #nosotros h2{
 	margin-bottom: 0;
+	margin-top: 100px;
+	text-align: center;
 }
 #nosotros p{
 	margin: 0;
@@ -202,6 +206,11 @@ footer{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	flex-grow: 1;
+}
+#iframe{
+	flex-grow: 1;
+	height: 100%;
 }
 #sub2{
 	display: flex;
@@ -254,10 +263,19 @@ footer{
 		flex-direction: column;
 		height: auto;
 		background-attachment: fixed;
+		background-position: center;
 	}
 	#contacto-div{
 		margin-top: 80px;
 	}
+	#gato{
+	height: 40vh;
+	width: 70vw;   
+	 }
+	 main{
+	 	background-position: center;
+	
+     }
 }
 @media(max-width: 1026px) and (min-width: 787px){
 	#productos-grid{
